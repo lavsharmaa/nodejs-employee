@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Employee Node.js</title>
+        <meta name="description" content="Node.js RESTful API">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <article class="markdown-body entry-content" itemprop="text">
+
+                        <h1>Employee Node.js</h1>
+                        <h2>Available end-points</h2>
+                        <h3>GET /employee</h3>
+                        <p>Gets all the available employee (2 sample employee).
+                        </p>
+                        <p><strong>Example:</strong> <a href="/employee" target="_blank">See the JSON result</a></p>
+
+                        <h3>GET /employee/:id</h3>
+                        <p>Obtains an employee record given its id.</p>
+                        <p><strong>Example:</strong> <a href="/employee/1" target="_blank">See the JSON result</a></p>
+
+                        <h3>POST /employee</h3>
+                        <p>Creates an employee record.</p>
+
+                        <p><strong>Headers</strong></p>
+
+                        <p>Content-Type : application/json</p>
+
+                        <p><strong>Request body (raw)</strong></p>
+
+                        <pre><code>{
+    "id": "3",
+    "name": "Lav Sharma",
+    "role": "Associate Software Engineer",
+    "age": "22",
+    "gender": "Male"
+}
+</code></pre>
+
+                        <h3>PUT /employee/:id</h3>
+                        <p>Updates an existing employee.</p>
+
+                        <p><strong>Headers</strong></p>
+
+                        <p>Content-Type : application/json</p>
+
+                        <p><strong>Request body (raw)</strong></p>
+
+                        <pre><code>{
+    "id": "1",
+    "name": "Mahesh Joshi",
+    "role": "Software Engineer",
+    "age": "23",
+    "gender": "Male"
+}
+</code></pre>
+
+                        <h3>DELETE /employee/:id</h3>
+                        <p>Removes an employee given its id.</p>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <noscript>
+            <p>JavaScript not enabled. Please active your JavaScript preferences.</p>
+        </noscript>
+        <script type="text/javascript">window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

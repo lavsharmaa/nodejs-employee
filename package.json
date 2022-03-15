@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-employee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lav Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "gulp": "^3.9.0",
+    "lodash": "^4.0.1",
+    "morgan": "^1.6.1"
+  }
+}
